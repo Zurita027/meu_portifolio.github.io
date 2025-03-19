@@ -1,47 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-
     <header>
-        <h1>Seu Nome</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 style="font-family: 'Montserrat', sans-serif;">Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" style="font-family: 'Poppins', sans-serif;">Sobre</a></li>
+                    <li><a href="#projetos" style="font-family: 'Poppins', sans-serif;">Projetos</a></li>
+                    <li><a href="#skills" style="font-family: 'Poppins', sans-serif;">Skills</a></li>
+                    <li><a href="#depoimentos" style="font-family: 'Poppins', sans-serif;">Depoimentos</a></li>
+                    <li><a href="#contato" style="font-family: 'Poppins', sans-serif;">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <h2>Oi, eu sou o Nathan 👋</h2>
-        <p>Desenvolvedor Web | Back-end | Criador de soluções digitais</p>
-        <a href="#projetos" class="btn">Veja meus Projetos</a>
+    <section id="hero">
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Bem-vindo ao Meu Portfólio</h2>
+            <p style="font-family: 'Poppins', sans-serif;">Desenvolvedor apaixonado por tecnologia e inovação.</p>
+            <a href="#contato" class="btn">Entre em contato</a>
+            <a href="curriculo.pdf" download class="btn">Baixar CV</a>
+        </div>
     </section>
 
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor apaixonado por tecnologia, especializado em Back-end e APIs.</p>
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Sobre Mim</h2>
+            <p style="font-family: 'Poppins', sans-serif;">E aí! Eu sou o Nathan, estudante de Ciência da Computação na UVV e apaixonado por tecnologia e desenvolvimento web. Com 19 anos, sou o tipo de pessoa que adora encarar desafios e aprender coisas novas, principalmente quando o assunto é programar e criar soluções que realmente façam a diferença.
+
+Minha jornada começou com Python e foi evoluindo para novas tecnologias como React.js, JavaScript, .NET e MySQL. Estou sempre em busca de uma oportunidade para colocar a mão na massa, melhorar minhas habilidades e colaborar em projetos inovadores. Além disso, estou em constante aprendizado sobre APIs, integração com bancos de dados e tudo que envolve o mundo do back-end e front-end.
+
+Tenho experiência criando sites, aplicando conceitos de design responsivo e trabalhando com autenticação e integração de APIs. Além disso, estou super empolgado para expandir meus conhecimentos em desenvolvimento full stack e colaborar com equipes que compartilhem essa paixão por criar soluções web de impacto.
+
+Se você curtiu o que viu aqui e está buscando alguém comprometido, criativo e sempre em busca de crescimento, então, bora trocar uma ideia!
+
+</p>
+        </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <img src="projeto1.jpg" alt="Projeto 1">
-            <h3>Nome do Projeto</h3>
-            <p>Descrição breve do projeto.</p>
-            <a href="#">Ver mais</a>
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Meus Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto"><h3>Projeto 1</h3><a href="#">Ver mais</a></div>
+                <div class="projeto"><h3>Projeto 2</h3><a href="#">Ver mais</a></div>
+                <div class="projeto"><h3>Projeto 3</h3><a href="#">Ver mais</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Skills & Tecnologias</h2>
+            <div class="skills-container">
+                <div class="skill">HTML <div class="progress"><div class="bar" style="width: 90%;"></div></div></div>
+                <div class="skill">CSS <div class="progress"><div class="bar" style="width: 85%;"></div></div></div>
+                <div class="skill">JavaScript <div class="progress"><div class="bar" style="width: 80%;"></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Depoimentos</h2>
+            <div class="depoimentos-container">
+                <p style="font-family: 'Poppins', sans-serif;">"Excelente desenvolvedor! Trabalho impecável." - Cliente A</p>
+                <p style="font-family: 'Poppins', sans-serif;">"Profissional incrível, recomendo!" - Cliente B</p>
+            </div>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Me envie um e-mail ou me chame na
+        <div class="container">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-family: 'Poppins', sans-serif;">&copy; 2025 Meu Portfólio - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -9,11 +9,11 @@
 
 /* 🔹 Cores principais */
 :root {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --primary-color: #ff6600;
-    --primary-hover: #ff4500;
-    --secondary-color: #1a1a1a;
+    --bg-color: #000000;       /* Fundo principal */
+    --text-color: #EBEBEB;     /* Texto principal */
+    --primary-color: #FF4000;  /* Cor de destaque */
+    --secondary-color: #668080; /* Cor secundária */
+    --dark-gray: #262626;      /* Tons escuros */
 }
 
 /* 🔹 Layout base */
@@ -22,6 +22,7 @@ body {
     color: var(--text-color);
     text-align: center;
     line-height: 1.6;
+    padding-top: 60px; /* Ajusta o topo da página para não ficar sobrepondo o header */
 }
 
 /* 🔹 Header */
@@ -30,12 +31,13 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: var(--secondary-color);
+    background: var(--dark-gray);
     padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 64, 0, 0.3);
+    z-index: 1000; /* Garante que o header esteja sempre no topo */
 }
 
 header h1 {
@@ -66,7 +68,7 @@ nav ul li a:hover {
 
 /* 🔹 Seções */
 section {
-    padding: 80px 10%;
+    padding: 100px 10%; /* Ajusta o padding-top para evitar sobreposição do header */
 }
 
 h2 {
@@ -94,7 +96,7 @@ p {
 }
 
 .btn:hover {
-    background: var(--primary-hover);
+    background: var(--secondary-color);
 }
 
 /* 🔹 Projetos */
@@ -106,7 +108,7 @@ p {
 }
 
 .projeto {
-    background: var(--secondary-color);
+    background: var(--dark-gray);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -122,19 +124,20 @@ p {
 .projeto h3 {
     margin-top: 10px;
     font-size: 1.4rem;
+    color: var(--primary-color);
 }
 
 .projeto a {
     display: block;
     margin-top: 10px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 .projeto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 64, 0, 0.3);
 }
 
 /* 🔹 Contato */
@@ -151,7 +154,7 @@ form input, form textarea {
     padding: 12px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
-    background: var(--secondary-color);
+    background: var(--dark-gray);
     color: var(--text-color);
 }
 
@@ -167,33 +170,16 @@ form button {
 }
 
 form button:hover {
-    background: var(--primary-hover);
+    background: var(--secondary-color);
 }
 
 /* 🔹 Footer */
 footer {
-    background: var(--secondary-color);
+    background: var(--dark-gray);
     padding: 20px;
     text-align: center;
     font-size: 1rem;
     margin-top: 50px;
 }
 
-/* 🔹 Responsividade */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .projetos-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* 🔹 Res
